@@ -23,7 +23,7 @@ set number
 set cursorline
 
 " Set the vertical rulers.
-set colorcolumn=100
+set colorcolumn=80
 
 " Displaying status line always.
 set laststatus=2
