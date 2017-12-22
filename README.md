@@ -1,0 +1,1 @@
+sh <(curl -L raw.github.com/tes3d/dotfiles/master/install.sh)
