@@ -38,7 +38,7 @@ if [ -d $LOCAL_REPOSITORY_PATH ]; then
       files=($(getManagedDotfiles))
       for file in ${files[@]}; do
         if [ -e "$HOME/$file" ]; then
-          rm "$HOME/$file"
+          rm -d "$HOME/$file"
         fi
       done
 
