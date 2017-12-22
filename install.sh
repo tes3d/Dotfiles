@@ -15,13 +15,15 @@ getManagedDotfiles() {
   cd $LOCAL_REPOSITORY_PATH
 
   for file in .??*; do
-    case $file in
-      ".git" | ".gitignore")
-        ;;
-      *)
-        result+=($file)
-        ;;
-    esac
+    if [ -e $file ]; then
+      case $file in
+        ".gitignore")
+          ;;
+        *)
+          result+=($file)
+          ;;
+      esac
+    fi
   done
 
   cd
@@ -38,7 +40,7 @@ if [ -d $LOCAL_REPOSITORY_PATH ]; then
       files=($(getManagedDotfiles))
       for file in ${files[@]}; do
         if [ -e "$HOME/$file" ]; then
-          rm -df "$HOME/$file"
+          rm "$HOME/$file"
         fi
       done
 
