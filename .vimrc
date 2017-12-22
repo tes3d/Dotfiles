@@ -19,9 +19,6 @@ set encoding=utf-8
 " Display line numbers.
 set number
 
-" Highlight current line.
-set cursorline
-
 " Set the vertical rulers.
 set colorcolumn=80
 
