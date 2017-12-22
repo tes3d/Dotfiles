@@ -57,6 +57,9 @@ set breakindent
 " Allow opening a new file when the current buffer has unsaved changes.
 set hidden
 
+" Disable error sounds and screen flashing.
+set noeb vb t_vb=
+
 " Enable color syntax highlighting.
 syntax on
 
@@ -65,9 +68,6 @@ au BufWritePre * :%s/\s\+$//ge
 
 " Disable the automatic insertion of line break to end of file.
 au BufWritePre * :set binary noeol
-
-" Disable error sounds and screen flashing.
-set noeb vb t_vb=
 
 " Key maps for switching to the previous buffer.
 nnoremap<Space>n :bprevious<CR>
