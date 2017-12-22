@@ -52,7 +52,7 @@ if [ -d $LOCAL_REPOSITORY_PATH ]; then
   esac
 fi
 
-git clone --recursive $REMOTE_REPOSITORY_URL $LOCAL_REPOSITORY_PATH
+git clone $REMOTE_REPOSITORY_URL $LOCAL_REPOSITORY_PATH
 
 if [ ! -d "$LOCAL_REPOSITORY_PATH/.git" ]; then
   abort "Could not download remote repository."
