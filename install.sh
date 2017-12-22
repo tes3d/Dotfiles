@@ -1,7 +1,7 @@
 #!/bin/sh
 
 LOCAL_REPOSITORY_PATH="$HOME/Dotfiles"
-REMOTE_REPOSITORY_URL="git://gist.github.com/tes3d/dotfiles.git"
+REMOTE_REPOSITORY_URL="https://github.com/tes3d/dotfiles.git"
 
 abort() {
   [ "$1" ] && echo "Error: $1" || echo "Error"
