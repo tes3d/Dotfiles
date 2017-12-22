@@ -98,6 +98,7 @@ Plugin'ctrlpvim/ctrlp.vim'
 let ctrlp_by_filename=1
 let ctrlp_cache_dir='~/.vim/cache'
 let ctrlp_clear_cache_on_exit=1
+let ctrlp_working_path_mode='c'
 
 " Let Vundle manage color scheme.
 Plugin'morhetz/gruvbox'
