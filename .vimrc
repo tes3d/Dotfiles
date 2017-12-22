@@ -64,7 +64,7 @@ set hidden
 syntax on
 
 " Automatically deletes whitespace at the end of each line.
-autocmd BufWritePre * :%s/\s\+$//ge
+au BufWritePre * :%s/\s\+$//ge
 
 " Disable the automatic insertion of line break to end of file.
 au BufWritePre * :set binary noeol
