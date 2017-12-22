@@ -25,9 +25,6 @@ set cursorline
 " Set the vertical rulers.
 set colorcolumn=80
 
-" Displaying status line always.
-set laststatus=2
-
 " Enable extended command line completion.
 set wildmenu
 
